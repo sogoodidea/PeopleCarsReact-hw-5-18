@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hw 5-18 PeopleCars.Web", "hw 5-18 PeopleCars.Web\hw 5-18 PeopleCars.Web.csproj", "{5A558263-A3E6-4A69-8372-D200EDA0CAD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hw 5-18 PeopleCars.Data", "hw 5-18 PeopleCars.Data\hw 5-18 PeopleCars.Data.csproj", "{4827CEFA-D1D7-45C4-B6D4-B6B50819E01D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A558263-A3E6-4A69-8372-D200EDA0CAD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A558263-A3E6-4A69-8372-D200EDA0CAD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A558263-A3E6-4A69-8372-D200EDA0CAD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A558263-A3E6-4A69-8372-D200EDA0CAD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4827CEFA-D1D7-45C4-B6D4-B6B50819E01D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4827CEFA-D1D7-45C4-B6D4-B6B50819E01D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4827CEFA-D1D7-45C4-B6D4-B6B50819E01D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4827CEFA-D1D7-45C4-B6D4-B6B50819E01D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9AB18BAB-13B8-4B96-A8F2-6D171CFF4967}
+	EndGlobalSection
+EndGlobal
