@@ -7,11 +7,11 @@ using System.Text;
 
 namespace hw_5_18_PeopleCars.Data
 {
-    public class PCRespository
+    public class PCRepository
     {
         private readonly string _connectionString;
 
-        public PCRespository(string connectionString)
+        public PCRepository(string connectionString)
         {
             _connectionString = connectionString;
         }

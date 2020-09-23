@@ -22,35 +22,35 @@ namespace hw_5_18_PeopleCars.Web.Controllers
         [Route("GetPeople")]
         public List<Person> GetPeople()
         {
-            var repo = new PCRespository(_connectionString);
+            var repo = new PCRepository(_connectionString);
             return repo.GetPeople();
         }
 
         [Route("GetPersonById")]
         public Person GetPersonById(int id)
         {
-            var repo = new PCRespository(_connectionString);
+            var repo = new PCRepository(_connectionString);
             return repo.GetPersonById(id);
         }
 
         [HttpPost][Route("AddPerson")]
         public void AddPerson(Person person)
         {
-            var repo = new PCRespository(_connectionString);
+            var repo = new PCRepository(_connectionString);
             repo.AddPerson(person);
         }
 
         [HttpPost][Route("AddCar")]
         public void AddCar(Car car)
         {
-            var repo = new PCRespository(_connectionString);
+            var repo = new PCRepository(_connectionString);
             repo.AddCar(car);
         }
 
         [HttpPost][Route("DeleteCars")]
         public void DeleteCars(Person person)
         {
-            var repo = new PCRespository(_connectionString);
+            var repo = new PCRepository(_connectionString);
             repo.DeleteCars(person.Id);
         }
     }

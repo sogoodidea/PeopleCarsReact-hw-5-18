@@ -1,5 +1,4 @@
 ﻿import React from 'react';
-import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { produce } from 'immer';
 
@@ -22,7 +21,6 @@ class AddCar extends React.Component {
         const { data } = await axios.get(`/api/peopleCar/getPersonById?id=${this.props.match.params.personId}`);
         this.setPersonId(data.id);
         this.setState({ person: data });
-        console.log(this.state.car);
     }
 
     setPersonId = id => {
@@ -46,11 +44,11 @@ class AddCar extends React.Component {
         this.setState(nextState);
     }
 
-    onSubmit = () => {
-        axios.post('/api/peopleCar/addCar', this.state.car);
-        this.setState({car: {make: '', model: '', year: '', personId: '' } })
+    onSubmit = async () => {
+        await axios.post('/api/peopleCar/addCar', this.state.car);
+        this.props.history.push('/');
     }
-
+   
     render() {
         const {firstName, lastName} = this.state.person
         return (
@@ -70,9 +68,7 @@ class AddCar extends React.Component {
                         onChange={this.onYearChange} name='year' />
                     <br />
 
-                    <Link to='/'>
-                        <button className="btn btn-primary" onClick={this.onSubmit}>Submit</button>
-                    </Link>
+                    <button className="btn btn-primary" onClick={this.onSubmit}>Submit</button>
 
                 </div>
 
